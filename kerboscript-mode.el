@@ -89,7 +89,7 @@
 (define-derived-mode kerboscript-mode prog-mode "KerboScript script"
   "KerboScript mode is a major mode for editing kOS files"
   
-  (setq font-lock-defaults '(kerboscript-keywords t t))
+  (setq font-lock-defaults '(kerboscript-keywords))
   (setq mode-name "kerboscript-mode")
 
   ;; when there's an override, use it
