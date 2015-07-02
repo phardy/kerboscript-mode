@@ -4,6 +4,8 @@
 ;; date: 2014-08-23
 ;; by:   frosch03
 
+(defvar kerboscript-mode-hook nil)
+
 (defun kerboscript-indent-line ()
   "Indent current line as kerboscript code"
   (interactive)
