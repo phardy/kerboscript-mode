@@ -49,13 +49,13 @@
 
 
 (setq kos-kwdList
-  '("to" "set" "if" "until" "lock" "unlock" "print" "on" "toggle" "wait" "when" "identifier" "stage" "clearscreen" "add" "remove" "log" "break" "preserve" "declare" "switch" "copy" "rename" "delete" "edit" "run" "list" "reboot" "shutdown" "for" "unset" "batch" "deploy")
+  '("set" "to" "if" "else" "from" "until" "step" "do" "lock" "unlock" "print" "at" "on" "toggle" "wait" "then" "off" "stage" "clearscreen" "add" "remove" "log" "break" "preserve" "declare" "parameter" "switch" "copy" "rename" "volume" "file" "delete" "edit" "run" "compile" "list" "reboot" "shutdown" "for" "unset" "batch" "deploy" "in" "all")
 )
 
 (setq kerboscript-keywords
   `(
     ( ,(regexp-opt kos-kwdList 'words) . font-lock-keyword-face)
-    ( ,(regexp-opt '("Pi") 'words)     . font-lock-constant-face)
+    ( ,(regexp-opt '("Pi" "true" "false") 'words)     . font-lock-constant-face)
     )
 )
 
