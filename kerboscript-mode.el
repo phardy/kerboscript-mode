@@ -30,7 +30,7 @@
                 (progn
                   (setq cur-indent (current-indentation))
                   (setq not-indented nil))
-              (if (looking-at "^[ \t]*\\(if.*{\\|until.*{\\|else.*{\\|for.*{\\|when.*then.*{\\|on.*{\\)")
+              (if (looking-at "^[ \t]*.*{")
                   (progn
                     (setq cur-indent (+ (current-indentation) default-tab-width))
                     (setq not-indented nil))
