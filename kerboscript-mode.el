@@ -6,6 +6,9 @@
 
 (defvar kerboscript-mode-hook nil)
 
+;; kOS has standardised on .ks extension for kerboscript files
+(add-to-list 'auto-mode-alist '("\\.ks\\'" . kerboscript-mode))
+
 (defun kerboscript-indent-line ()
   "Indent current line as kerboscript code"
   (interactive)
